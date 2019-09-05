@@ -1,6 +1,9 @@
 # Feature 2: Library of stretches
 # Seek input for: Legs, Back, Core, Shoulders, Chest, Neck, Arms, Wrists/Forearm
 
+require_relative "./methods_def.rb"
+require 'launchy'
+
 body = {
     lower_body: {
         legs: "Hamstring stretch"
@@ -18,10 +21,6 @@ body = {
     }
 }
 
-body.each { |x, y| puts "#{x}: #{y}" }
+# body.each { |x, y| puts "#{x}: #{y}" }
 
-
-
-# def stretch_query(name)
-#     puts "Okay #{name} What do you want to stretch?"
-# end
+# system("open", "http://stackoverflow.com/")
