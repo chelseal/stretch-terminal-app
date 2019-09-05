@@ -18,13 +18,13 @@ when 0..15
             puts shoulders_stretch
             break
         elsif input.to_i == 2
-            puts Wrist_forearm_stretch
+            puts wrist_forearm_stretch
             break
         elsif input.to_i == 3
-            puts Upper_trap_stretch
+            puts upper_trap_stretch
             break
         elsif input.to_i == 4
-            puts Neck_stretch
+            puts neck_stretch
             break
         else
             puts "Please choose a valid number from the list"
@@ -38,13 +38,13 @@ when 16..25
         input = gets.chomp
 
         if input.to_i == 1
-            puts Pectoralis_stretch
+            puts pectoralis_stretch
             break
         elsif input.to_i == 2
-            puts Torso_stretch
+            puts torso_stretch
             break
         elsif input.to_i == 3
-            puts Upper_back_stretch
+            puts upper_back_stretch
             break
         else
             puts "Please choose a valid number from the list"
@@ -58,7 +58,7 @@ when 26..240
         input = gets.chomp
 
         if input.to_i == 1
-            puts Hamstrings_stretch
+            puts hamstrings_stretch
             break
         else
             puts "Please choose a valid number from the list"
@@ -67,6 +67,23 @@ when 26..240
 end
 
 
+
 # Launchy.open("http://google.com")
 
+puts "Do you want to learn more about making your workspace ergonomic?"
+puts "Type 'y' for yes and 'n' for no"
 
+begin
+    while true 
+        input = gets.chomp 
+        if input == "n"
+            puts "Okay, time to get back to work"
+            break
+        end
+        if input == "y"
+            puts Launchy.open("http://google.com")
+            exit! 
+            break
+        end
+    end
+end
