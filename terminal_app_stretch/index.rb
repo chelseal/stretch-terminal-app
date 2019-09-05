@@ -10,9 +10,6 @@ puts "Thanks #{name}, how long was your working sprint in minutes?"
 time = gets.chomp.to_i
 
 body = {
-    lower_body: {
-        legs: "Hamstring stretch"
-    },
     core_chest: {
         chest: "Pectoralis stretch",
         core: "Torso stretch",
@@ -23,27 +20,33 @@ body = {
         wrist_forearm: "Wrist and forearm stretch",
         arms: "Upper trap stretch",
         neck: "Neck stretch"
+    },
+    lower_body: {
+        legs: "Hamstring stretch"
     }
 }
 
 case time
 when 0..15
-    puts "Would you like to stretch your:\n\ 1) Shoulders, (2) Wrists or forearms, (3) Arms, (4) Neck \n\ Please enter the number"
+    puts "Would you like to stretch your:\n\ (1) Shoulders, (2) Wrists or forearms, (3) Arms, (4) Neck \n\ Please enter the number"
 
 input = gets.chomp
 
     if input.to_i == 1
-        puts "Torso stretch"
+        puts Shoulders_stretch
     end
 
     if input.to_i == 2
-        puts "Pectoralis stretch"
+        puts Wrist_forearm_stretch
     end
 
     if input.to_i == 3
-        puts Upper_back_stretch
+        puts Upper_trap_stretch
     end
 
+    if input.to_i == 4
+        puts Neck_stretch
+    end
 
 when 16..25
     puts "Would you like to stretch your:\n\ (1) Core, (2) Chest or (3) Back \n\ Please enter the number"
@@ -51,11 +54,11 @@ when 16..25
 input = gets.chomp
 
     if input.to_i == 1
-        puts "Torso stretch"
+        puts Torso_stretch
     end
 
     if input.to_i == 2
-        puts "Pectoralis stretch"
+        # puts 
     end
 
     if input.to_i == 3
@@ -68,9 +71,11 @@ when 26..240
 
 input = gets.chomp
 
+if input.to_i == 1
+    puts Hamstrings_stretch
 
-else
-    puts "Please re-enter the length of your working sprint in minutes. For example: 11 minutes working sprint = simply type '11'"
 end
 
-
+else
+    puts "Please re-enter the length of your working sprint in minutes. For example: 11 minutes working sprint = simply type 11"
+end
