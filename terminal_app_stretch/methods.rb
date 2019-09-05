@@ -3,20 +3,25 @@
 
 body = {
     lower_body: {
-        legs: "Hamstring stretch",
+        legs: "Hamstring stretch"
     },
     core_chest: {
-        chest: "Shoulder stretch",
+        chest: "Pectoralis stretch",
         core: "Torso stretch",
-        back: "Upper back stretch",
-    }
+        back: "Upper back stretch"
+    },
     upper_body: {
-        shoulder: "Upper trap stretch",
+        shoulder: "Shoulder shrug",
         wrist_forearm: "Wrist and forearm stretch",
-        arms: "Upper body and arm stretch",
+        arms: "Upper trap stretch",
         neck: "Neck stretch"
     }
 }
 
-p body[:upper_body][:arms]
+body.each { |x, y| puts "#{x}: #{y}" }
 
+
+
+# def stretch_query(name)
+#     puts "Okay #{name} What do you want to stretch?"
+# end
