@@ -15,7 +15,7 @@ when 0..15
         input = gets.chomp
 
         if input.to_i == 1
-            puts Shoulders_stretch
+            puts shoulders_stretch
             break
         elsif input.to_i == 2
             puts Wrist_forearm_stretch
@@ -66,6 +66,7 @@ when 26..240
     end
 end
 
+
 # Launchy.open("http://google.com")
-# system("open", "http://stackoverflow.com/")
+
 
