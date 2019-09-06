@@ -2,7 +2,7 @@
 require_relative "./methods_def.rb"
 require_relative "./help_file.rb"
 
-# gems
+# ruby gems
 require 'launchy'
 require 'colorize'
 
