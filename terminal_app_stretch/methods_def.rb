@@ -1,3 +1,5 @@
+# Feature 2: Stretches library
+
 # Upper body stretches grouping
 def shoulders_stretch 
     "Raise both shoulders at once up toward the ears. Drop them and repeat 10 times each direction."
